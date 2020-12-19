@@ -1,6 +1,6 @@
 #第一週
 
-*Not
+ *Not
   ```// This file is part of www.nand2tetris.org
   // and the book "The Elements of Computing Systems"
   // by Nisan and Schocken, MIT Press.
@@ -20,7 +20,7 @@
       Nand(a=in, b=in, out=out);
   }
 ```
-*And
+ *And
   ```// This file is part of www.nand2tetris.org
   // and the book "The Elements of Computing Systems"
   // by Nisan and Schocken, MIT Press.
@@ -44,7 +44,7 @@
   }
   ```
   
-*Or
+ *Or
   ```// This file is part of www.nand2tetris.org
   // and the book "The Elements of Computing Systems"
   // by Nisan and Schocken, MIT Press.
@@ -68,7 +68,7 @@
   }
   ```
   
-*Xor
+ *Xor
   ```// This file is part of www.nand2tetris.org
   // and the book "The Elements of Computing Systems"
   // by Nisan and Schocken, MIT Press.
@@ -91,7 +91,7 @@
     Or(a=o1,b=o2,out=out);
   }
   ```
-*Mux
+ *Mux
   ```// This file is part of www.nand2tetris.org
   // and the book "The Elements of Computing Systems"
   // by Nisan and Schocken, MIT Press.
@@ -115,7 +115,7 @@
       Or(a=o1,b=o2,out=out);
   }
   ```
-*DMux
+ *DMux
   ```// This file is part of www.nand2tetris.org
   // and the book "The Elements of Computing Systems"
   // by Nisan and Schocken, MIT Press.
