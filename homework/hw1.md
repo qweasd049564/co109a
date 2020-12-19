@@ -21,7 +21,7 @@
   }
 ```
 *And
-  // This file is part of www.nand2tetris.org
+  ```// This file is part of www.nand2tetris.org
   // and the book "The Elements of Computing Systems"
   // by Nisan and Schocken, MIT Press.
   // File name: projects/01/And.hdl
@@ -42,10 +42,10 @@
       Not(in=AnandB,out=out);
 
   }
-  ///
+  ```
   
 *Or
-  // This file is part of www.nand2tetris.org
+  ```// This file is part of www.nand2tetris.org
   // and the book "The Elements of Computing Systems"
   // by Nisan and Schocken, MIT Press.
   // File name: projects/01/Or.hdl
@@ -65,10 +65,10 @@
       Not(in=a,out=na);
       Not(in=b,out=nb);
       Nand(a=na,b=nb,out=out);
-  }
+  }```
   
 *Xor
-  // This file is part of www.nand2tetris.org
+  ```// This file is part of www.nand2tetris.org
   // and the book "The Elements of Computing Systems"
   // by Nisan and Schocken, MIT Press.
   // File name: projects/01/Xor.hdl
@@ -88,9 +88,9 @@
     And(a=na,b=b,out=o1);
     And(a=a,b=nb,out=o2);
     Or(a=o1,b=o2,out=out);
-  }
+  }```
 *Mux
-  // This file is part of www.nand2tetris.org
+  ```// This file is part of www.nand2tetris.org
   // and the book "The Elements of Computing Systems"
   // by Nisan and Schocken, MIT Press.
   // File name: projects/01/Mux.hdl
@@ -111,9 +111,9 @@
       And(a=a,b=ns,out=o1);
       And(a=b,b=sel,out=o2);
       Or(a=o1,b=o2,out=out);
-  }
+  }```
 *DMux
-  // This file is part of www.nand2tetris.org
+  ```// This file is part of www.nand2tetris.org
   // and the book "The Elements of Computing Systems"
   // by Nisan and Schocken, MIT Press.
   // File name: projects/01/DMux.hdl
@@ -133,4 +133,4 @@
       Not(in=sel,out=nsel);
       And(a=in,b=nsel,out=a);
       And(a=in,b=sel,out=b);
-  }
+  }```
