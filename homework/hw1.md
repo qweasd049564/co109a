@@ -1,7 +1,7 @@
 #第一週
 
 *Not
-  // This file is part of www.nand2tetris.org
+  ///// This file is part of www.nand2tetris.org
   // and the book "The Elements of Computing Systems"
   // by Nisan and Schocken, MIT Press.
   // File name: projects/01/Not.hdl
@@ -42,6 +42,7 @@
       Not(in=AnandB,out=out);
 
   }
+  ///
   
 *Or
   // This file is part of www.nand2tetris.org
