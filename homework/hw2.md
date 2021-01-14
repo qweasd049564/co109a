@@ -109,73 +109,74 @@ CHIP Not16 {
 
 * Mux16
 ```
-// This file is part of www.nand2tetris.org
-// and the book "The Elements of Computing Systems"
-// by Nisan and Schocken, MIT Press.
-// File name: projects/01/Mux16.hdl
+    // This file is part of www.nand2tetris.org
+    // and the book "The Elements of Computing Systems"
+    // by Nisan and Schocken, MIT Press.
+    // File name: projects/01/Mux16.hdl
 
-/**
- * 16-bit multiplexor: 
- * for i = 0..15 out[i] = a[i] if sel == 0 
- *                        b[i] if sel == 1
- */
+    /**
+     * 16-bit multiplexor: 
+     * for i = 0..15 out[i] = a[i] if sel == 0 
+     *                        b[i] if sel == 1
+     */
 
-CHIP Mux16 {
-    IN a[16], b[16], sel;
-    OUT out[16];
+    CHIP Mux16 {
+        IN a[16], b[16], sel;
+        OUT out[16];
 
-    PARTS:
-    // Put your code here:
-    Mux(a=a[0],b=b[0],sel=sel,out=out[0]);
-    Mux(a=a[1],b=b[1],sel=sel,out=out[1]);
-    Mux(a=a[2],b=b[2],sel=sel,out=out[2]);
-    Mux(a=a[3],b=b[3],sel=sel,out=out[3]);
-    Mux(a=a[4],b=b[4],sel=sel,out=out[4]);
-    Mux(a=a[5],b=b[5],sel=sel,out=out[5]);
-    Mux(a=a[6],b=b[6],sel=sel,out=out[6]);
-    Mux(a=a[7],b=b[7],sel=sel,out=out[7]);
-    Mux(a=a[8],b=b[8],sel=sel,out=out[8]);
-    Mux(a=a[9],b=b[9],sel=sel,out=out[9]);
-    Mux(a=a[10],b=b[10],sel=sel,out=out[10]);
-    Mux(a=a[11],b=b[11],sel=sel,out=out[11]);
-    Mux(a=a[12],b=b[12],sel=sel,out=out[12]);
-    Mux(a=a[13],b=b[13],sel=sel,out=out[13]);
-    Mux(a=a[14],b=b[14],sel=sel,out=out[14]);
-    Mux(a=a[15],b=b[15],sel=sel,out=out[15]);
-}
+        PARTS:
+        // Put your code here:
+        Mux(a=a[0],b=b[0],sel=sel,out=out[0]);
+        Mux(a=a[1],b=b[1],sel=sel,out=out[1]);
+        Mux(a=a[2],b=b[2],sel=sel,out=out[2]);
+        Mux(a=a[3],b=b[3],sel=sel,out=out[3]);
+        Mux(a=a[4],b=b[4],sel=sel,out=out[4]);
+        Mux(a=a[5],b=b[5],sel=sel,out=out[5]);
+        Mux(a=a[6],b=b[6],sel=sel,out=out[6]);
+        Mux(a=a[7],b=b[7],sel=sel,out=out[7]);
+        Mux(a=a[8],b=b[8],sel=sel,out=out[8]);
+        Mux(a=a[9],b=b[9],sel=sel,out=out[9]);
+        Mux(a=a[10],b=b[10],sel=sel,out=out[10]);
+        Mux(a=a[11],b=b[11],sel=sel,out=out[11]);
+        Mux(a=a[12],b=b[12],sel=sel,out=out[12]);
+        Mux(a=a[13],b=b[13],sel=sel,out=out[13]);
+        Mux(a=a[14],b=b[14],sel=sel,out=out[14]);
+        Mux(a=a[15],b=b[15],sel=sel,out=out[15]);
+    }
 ```
+
 * Mux4Way16
 ```
-// This file is part of www.nand2tetris.org
-// and the book "The Elements of Computing Systems"
-// by Nisan and Schocken, MIT Press.
-// File name: projects/01/Mux4Way16.hdl
+    // This file is part of www.nand2tetris.org
+    // and the book "The Elements of Computing Systems"
+    // by Nisan and Schocken, MIT Press.
+    // File name: projects/01/Mux4Way16.hdl
 
-/**
- * 4-way 16-bit multiplexor:
- * out = a if sel == 00
- *       b if sel == 01
- *       c if sel == 10
- *       d if sel == 11
- */
+    /**
+     * 4-way 16-bit multiplexor:
+     * out = a if sel == 00
+     *       b if sel == 01
+     *       c if sel == 10
+     *       d if sel == 11
+     */
 
-CHIP Mux4Way16 {
-    IN a[16], b[16], c[16], d[16], sel[2];
-    OUT out[16];
+    CHIP Mux4Way16 {
+        IN a[16], b[16], c[16], d[16], sel[2];
+        OUT out[16];
 
-    PARTS:
-    // Put your code here:
-    Mux16(a=a,b=b,sel=sel[0],out=e);
-    Mux16(a=c,b=d,sel=sel[0],out=f);
-    Mux16(a=e,b=f,sel=sel[1],out=out);
-}
+        PARTS:
+        // Put your code here:
+        Mux16(a=a,b=b,sel=sel[0],out=e);
+        Mux16(a=c,b=d,sel=sel[0],out=f);
+        Mux16(a=e,b=f,sel=sel[1],out=out);
+    }
 ```
 * Mux8Way16
 ```
- IN a[16], b[16], c[16], d[16],
-       e[16], f[16], g[16], h[16],
-       sel[3];
-    OUT out[16];
+     IN a[16], b[16], c[16], d[16],
+        e[16], f[16], g[16], h[16],
+        sel[3];
+     OUT out[16];
 
     PARTS:
     // Put your code here:
@@ -186,23 +187,23 @@ CHIP Mux4Way16 {
     Mux16(a=i,b=j,sel=sel[1],out=m);
     Mux16(a=k,b=l,sel=sel[1],out=n);
     Mux16(a=m,b=n,sel=sel[2],out=out);
-}
+    }
 ```
 * Or8Way
 ```
-// This file is part of www.nand2tetris.org
-// and the book "The Elements of Computing Systems"
-// by Nisan and Schocken, MIT Press.
-// File name: projects/01/Or8Way.hdl
+    // This file is part of www.nand2tetris.org
+    // and the book "The Elements of Computing Systems"
+    // by Nisan and Schocken, MIT Press.
+    // File name: projects/01/Or8Way.hdl
 
-/**
- * 8-way Or: 
- * out = (in[0] or in[1] or ... or in[7])
- */
+    /**
+     * 8-way Or: 
+     * out = (in[0] or in[1] or ... or in[7])
+     */
 
-CHIP Or8Way {
-    IN in[8];
-    OUT out;
+    CHIP Or8Way {
+        IN in[8];
+        OUT out;
 
     PARTS:
     // Put your code here:
@@ -213,52 +214,52 @@ CHIP Or8Way {
     Or(a=a,b=b,out=e);
     Or(a=c,b=d,out=f);
     Or(a=e,b=f,out=out);
-}
+    }
 ```
 * DMux4Way
 ```
-// This file is part of www.nand2tetris.org
-// and the book "The Elements of Computing Systems"
-// by Nisan and Schocken, MIT Press.
-// File name: projects/01/DMux4Way.hdl
+    // This file is part of www.nand2tetris.org
+    // and the book "The Elements of Computing Systems"
+    // by Nisan and Schocken, MIT Press.
+    // File name: projects/01/DMux4Way.hdl
 
-/**
- * 4-way demultiplexor:
- * {a, b, c, d} = {in, 0, 0, 0} if sel == 00
- *                {0, in, 0, 0} if sel == 01
- *                {0, 0, in, 0} if sel == 10
- *                {0, 0, 0, in} if sel == 11
- */
+    /**
+     * 4-way demultiplexor:
+     * {a, b, c, d} = {in, 0, 0, 0} if sel == 00
+     *                {0, in, 0, 0} if sel == 01
+     *                {0, 0, in, 0} if sel == 10
+     *                {0, 0, 0, in} if sel == 11
+     */
 
-CHIP DMux4Way {
-    IN in, sel[2];
-    OUT a, b, c, d;
+    CHIP DMux4Way {
+        IN in, sel[2];
+        OUT a, b, c, d;
 
     PARTS:
     // Put your code here:
     DMux(in=in,sel=sel[1],a=DMuxa,b=DMuxb);
     DMux(in=DMuxa,sel=sel[0],a=a,b=b);
     DMux(in=DMuxb,sel=sel[0],a=c,b=d);
-}
+    }
 ```
 * DMux8Way
 ```
-// This file is part of www.nand2tetris.org
-// and the book "The Elements of Computing Systems"
-// by Nisan and Schocken, MIT Press.
-// File name: projects/01/DMux8Way.hdl
+    // This file is part of www.nand2tetris.org
+    // and the book "The Elements of Computing Systems"
+    // by Nisan and Schocken, MIT Press.
+    // File name: projects/01/DMux8Way.hdl
 
-/**
- * 8-way demultiplexor:
- * {a, b, c, d, e, f, g, h} = {in, 0, 0, 0, 0, 0, 0, 0} if sel == 000
- *                            {0, in, 0, 0, 0, 0, 0, 0} if sel == 001
- *                            etc.
- *                            {0, 0, 0, 0, 0, 0, 0, in} if sel == 111
- */
+    /**
+     * 8-way demultiplexor:
+     * {a, b, c, d, e, f, g, h} = {in, 0, 0, 0, 0, 0, 0, 0} if sel == 000
+     *                            {0, in, 0, 0, 0, 0, 0, 0} if sel == 001
+     *                            etc.
+     *                            {0, 0, 0, 0, 0, 0, 0, in} if sel == 111
+     */
 
-CHIP DMux8Way {
-    IN in, sel[3];
-    OUT a, b, c, d, e, f, g, h;
+    CHIP DMux8Way {
+        IN in, sel[3];
+        OUT a, b, c, d, e, f, g, h;
 
     PARTS:
     // Put your code here:
@@ -269,5 +270,5 @@ CHIP DMux8Way {
     DMux(in=Dd,sel=sel[0],a=c,b=d);
     DMux(in=De,sel=sel[0],a=e,b=f);
     DMux(in=Df,sel=sel[0],a=g,b=h);
-}
+    }
 ```
