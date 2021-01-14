@@ -108,4 +108,4 @@ CHIP Inc16 {
    Add16(a=in,b[0]=true,b[1..15]=false,out=out);
 }
 ```
-![]()
+![](https://github.com/qweasd049564/co109a/blob/master/homework/IMG_0208.JPG)
