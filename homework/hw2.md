@@ -293,3 +293,4 @@ CHIP Not16 {
     DMux(in=Df,sel=sel[0],a=g,b=h);
     }
 ```
+![](https://github.com/qweasd049564/co109a/blob/master/homework/IMG_0207.JPG)
