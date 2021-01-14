@@ -1,4 +1,5 @@
 # 第二週
+
 * Or16
 ```
 // This file is part of www.nand2tetris.org
@@ -71,6 +72,7 @@ CHIP And16 {
     And(a=a[15],b=b[15],out=out[15]);
 }
 ```
+
 * Not16
 ```
 // This file is part of www.nand2tetris.org
@@ -106,6 +108,7 @@ CHIP Not16 {
     Not(in=in[14],out=out[14]);
     Not(in=in[15],out=out[15]);    
 }
+```
 
 * Mux16
 ```
@@ -171,6 +174,7 @@ CHIP Not16 {
         Mux16(a=e,b=f,sel=sel[1],out=out);
     }
 ```
+
 * Mux8Way16
 ```
      IN a[16], b[16], c[16], d[16],
@@ -189,6 +193,7 @@ CHIP Not16 {
     Mux16(a=m,b=n,sel=sel[2],out=out);
     }
 ```
+
 * Or8Way
 ```
     // This file is part of www.nand2tetris.org
@@ -216,6 +221,7 @@ CHIP Not16 {
     Or(a=e,b=f,out=out);
     }
 ```
+
 * DMux4Way
 ```
     // This file is part of www.nand2tetris.org
@@ -242,6 +248,7 @@ CHIP Not16 {
     DMux(in=DMuxb,sel=sel[0],a=c,b=d);
     }
 ```
+
 * DMux8Way
 ```
     // This file is part of www.nand2tetris.org
