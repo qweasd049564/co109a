@@ -145,4 +145,4 @@ CHIP ALU {
 
 }
 ```
-![]()
+![](https://github.com/qweasd049564/co109a/blob/master/homework/IMG_0221.JPG)
