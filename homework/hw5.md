@@ -60,3 +60,4 @@ CHIP Register {
     Bit(in=in[15],load=load,out=out[15]);
 }
 ```
+![](https://github.com/qweasd049564/co109a/blob/master/homework/IMG_0222.JPG)
