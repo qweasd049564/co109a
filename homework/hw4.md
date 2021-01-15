@@ -1,5 +1,6 @@
 # 第五週
 * ALU-nostat
+
 ```
 // This file is part of www.nand2tetris.org
 // and the book "The Elements of Computing Systems"
@@ -69,7 +70,8 @@ CHIP ALU {
 }
 
 * ALU
-```
+
+
 // This file is part of www.nand2tetris.org
 // and the book "The Elements of Computing Systems"
 // by Nisan and Schocken, MIT Press.
@@ -144,6 +146,6 @@ CHIP ALU {
 
 
 }
-```
+
 
 ![](https://github.com/qweasd049564/co109a/blob/master/homework/IMG_0221.JPG)
