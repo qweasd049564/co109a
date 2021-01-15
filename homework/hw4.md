@@ -1,4 +1,5 @@
 # 第五週
+
 * ALU-nostat
 
 ```
@@ -68,10 +69,10 @@ CHIP ALU {
     Not16(in=fout,out=nfout);
     Mux16(a=fout,b=nfout,sel=no,out=out);
 }
-
+```
 * ALU
 
-
+```
 // This file is part of www.nand2tetris.org
 // and the book "The Elements of Computing Systems"
 // by Nisan and Schocken, MIT Press.
@@ -142,10 +143,7 @@ CHIP ALU {
     Or8Way(in=Lowway,out=o82);
     Or(a=o81,b=o82,out=o1);
     Not(in=o1,out=zr);
-
-
-
 }
-
+```
 
 ![](https://github.com/qweasd049564/co109a/blob/master/homework/IMG_0221.JPG)
