@@ -29,3 +29,4 @@ CHIP PC {
     Register(in=z,load=true,out=pc,out=out);
 }
 ```
+![](https://github.com/qweasd049564/co109a/blob/master/homework/IMG_0226.JPG)
