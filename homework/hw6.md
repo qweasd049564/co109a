@@ -155,3 +155,8 @@ CHIP RAM16K {
     Mux4Way16(a=r0, b=r1, c=r2, d=r3, sel=address[12..13], out=out);
 }
 ```
+![](https://github.com/qweasd049564/co109a/blob/master/homework/IMG_0223.JPG)
+
+![](https://github.com/qweasd049564/co109a/blob/master/homework/IMG_0224.JPG)
+
+![](https://github.com/qweasd049564/co109a/blob/master/homework/IMG_0225.JPG)
